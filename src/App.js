@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { usePokemon } from "./application/hooks/usePokemon";
 
 function App() {
-  const { pokemonList, getPokemonList } = usePokemon();
+  const { getPokemonList, addFilter, pokemonList, filter, error } =
+    usePokemon();
 
   useEffect(() => {
     if (Object.keys(pokemonList).length === 0) {
@@ -10,9 +11,22 @@ function App() {
     }
   }, [getPokemonList, pokemonList]);
 
-  console.log(pokemonList);
-
-  return <div>PokeApi</div>;
+  return (
+    <div>
+      PokeApi
+      <br />
+      <button onClick={() => addFilter("grass")}>GRASS</button>
+      <br />
+      <div>
+        {pokemonList &&
+          pokemonList.map((item, i) => (
+            <div>
+              <div>{item.name}</div>
+            </div>
+          ))}
+      </div>
+    </div>
+  );
 }
 
 export default App;
