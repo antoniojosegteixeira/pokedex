@@ -11,5 +11,5 @@ export function usePokemon() {
     dispatch({ type: "ADD_POKEMON_LIST", payload: pokemonList.results });
   };
 
-  return { getPokemonList };
+  return { getPokemonList, pokemonList: state.pokemonList };
 }
