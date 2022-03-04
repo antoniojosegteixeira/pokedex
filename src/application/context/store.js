@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 
 // Criando context
-const AppContext = createContext({});
+export const AppContext = createContext();
 
 const reducer = (state, action) => {
   return state;
