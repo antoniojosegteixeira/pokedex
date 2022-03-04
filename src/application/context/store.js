@@ -4,11 +4,16 @@ import React, { createContext, useReducer } from "react";
 export const AppContext = createContext();
 
 const reducer = (state, action) => {
-  return state;
+  switch (action.type) {
+    case "ADD_POKEMON_LIST":
+      return { ...state, pokemonList: action.payload };
+    default:
+      return state;
+  }
 };
 
 const initialState = {
-  pokemonList: [],
+  pokemonList: {},
   filter: "",
   error: "",
 };
