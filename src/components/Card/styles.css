@@ -1,0 +1,15 @@
+.card {
+  border-radius: 10px;
+
+  background: rgb(113, 232, 209);
+  background: linear-gradient(
+    0deg,
+    rgba(113, 232, 209, 1) 25%,
+    rgba(80, 221, 187, 1) 100%
+  );
+}
+
+.card-image-wrapper {
+  display: flex;
+  justify-content: center;
+}

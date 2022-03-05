@@ -3,7 +3,10 @@ import React from "react";
 export default function Card({ name, id, image }) {
   return (
     <div className="card">
-      <img src={image} alt="" />
+      <div className="card-image-wrapper">
+        <img src={image} alt="" />
+      </div>
+
       {name}
     </div>
   );
