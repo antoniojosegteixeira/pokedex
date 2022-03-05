@@ -1,22 +1,24 @@
 .card {
   border-radius: 10px;
-
-  padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 10px;
 }
 
 .card-image-wrapper {
   display: flex;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .card-info {
   display: flex;
   flex-direction: column;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(125, 221, 192);
 }
 
 .card-name {
   text-transform: capitalize;
   text-align: center;
   font-size: large;
-  font-weight: bold;
 }
