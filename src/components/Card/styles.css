@@ -1,15 +1,22 @@
 .card {
   border-radius: 10px;
 
-  background: rgb(113, 232, 209);
-  background: linear-gradient(
-    0deg,
-    rgba(113, 232, 209, 1) 25%,
-    rgba(80, 221, 187, 1) 100%
-  );
+  padding: 10px 0;
 }
 
 .card-image-wrapper {
   display: flex;
   justify-content: center;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-name {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
 }

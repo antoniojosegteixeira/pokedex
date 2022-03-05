@@ -7,7 +7,9 @@ export default function Card({ name, id, image }) {
         <img src={image} alt="" />
       </div>
 
-      {name}
+      <div className="card-info">
+        <span className="card-name">{name}</span>
+      </div>
     </div>
   );
 }
