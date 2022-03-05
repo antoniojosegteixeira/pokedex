@@ -21,10 +21,10 @@ function Home() {
   }, [pokemonList, getPokemonList, loading]);
 
   return (
-    <div className="page-wrapper">
-      <div className="container">
-        <div className="title-container">
-          <h1 className="main-title">PokéApi</h1>
+    <div className="home-wrapper">
+      <div className="home-container">
+        <div className="home-title-container">
+          <h1 className="home-main-title">PokéApi</h1>
         </div>
 
         <br />

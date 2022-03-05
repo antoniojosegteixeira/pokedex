@@ -1,23 +1,23 @@
-.page-wrapper {
+.home-wrapper {
   min-height: 100vh;
 }
 
-.container {
+.home-container {
   margin: 0 auto;
   max-width: 1000px;
 }
 
-.title-container {
+.home-title-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.main-title {
+.home-main-title {
   font-family: "Pokemon Solid", sans-serif;
   color: orange;
 }
 
-.cardBox {
+.home-cardBox {
   max-width: 800px;
 }
