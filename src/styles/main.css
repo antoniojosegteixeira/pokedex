@@ -6,3 +6,6 @@
 
 /* CARD */
 @import "../components/Card/styles.css";
+
+/* TYPE BUTTON */
+@import "../components/TypeButton/styles.css";
