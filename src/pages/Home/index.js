@@ -31,7 +31,7 @@ function Home() {
         <button onClick={() => addFilter("grass")}>GRASS</button>
         <br />
         <h3>{loading && "loading"}</h3>
-        <div className="home-card-container">
+        <div className="home-card-grid">
           {pokemonList.length > 0 &&
             pokemonList.map((item) => (
               <div key={item.name}>

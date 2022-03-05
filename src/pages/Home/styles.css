@@ -18,8 +18,9 @@
   color: orange;
 }
 
-.home-card-container {
+.home-card-grid {
   border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-column-gap: 10px;
 }
