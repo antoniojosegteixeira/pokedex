@@ -11,8 +11,9 @@ export function usePokemon() {
   const { pokemonList, error, filter } = state;
 
   const getPokemonList = async () => {
-    const listResponse = await getPokemonListRequest();
-    const simplePokemonList = listResponse.results;
+    /// Get raw list of every pokemon
+    const { results } = await getPokemonListRequest();
+    const simplePokemonList = results;
     const updatedPokemonList = { ...simplePokemonList };
 
     simplePokemonList.map(async (item, i) => {
