@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 };
 
 const initialState = {
-  pokemonList: {},
+  pokemonList: [],
   filter: "",
   error: "",
 };
