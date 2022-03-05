@@ -31,11 +31,21 @@
 }
 
 .card-type {
-  background-color: rgb(24, 146, 34);
   box-shadow: rgba(0, 0, 0, 0.644) 1px 2px 2px;
   color: rgb(255, 255, 255);
   border-radius: 5px;
   font-family: monospace;
   padding: 5px;
   font-size: 0.9rem;
+}
+
+/// Iterate through array of colors
+@each $typeColor, $i in $typeColors {
+  .card-type.#{$typeColor} {
+    background-color: $i;
+
+    &:hover {
+      background-color: darken($i, 10%);
+    }
+  }
 }

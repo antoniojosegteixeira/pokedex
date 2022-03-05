@@ -15,9 +15,13 @@ export default function PokemonScreen() {
     return (
       <div className="screen-grid">
         {filteredPokemons.map((item) => (
-          <div key={item.name}>
-            <Card name={item.name} id={item.id} image={item.image} />
-          </div>
+          <Card
+            key={item.name}
+            name={item.name}
+            id={item.id}
+            image={item.image}
+            types={item.types}
+          />
         ))}
       </div>
     );
@@ -29,9 +33,13 @@ export default function PokemonScreen() {
       <div className="screen-grid">
         {pokemonList.length > 0 &&
           pokemonList.map((item) => (
-            <div key={item.name}>
-              <Card name={item.name} id={item.id} image={item.image} />
-            </div>
+            <Card
+              key={item.name}
+              name={item.name}
+              id={item.id}
+              image={item.image}
+              types={item.types}
+            />
           ))}
       </div>
     );

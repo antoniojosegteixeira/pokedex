@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Card({ name, id, image }) {
+export default function Card({ name, id, image, types }) {
+  console.log(types);
+
   return (
     <div className="card">
       <div className="card-image-wrapper">
@@ -10,8 +12,14 @@ export default function Card({ name, id, image }) {
       <div className="card-info">
         <span className="card-name">{name}</span>
         <div className="card-type-wrapper">
-          <div className="card-type">GRASS</div>
-          <div className="card-type">GRASS</div>
+          {types.map(({ type }) => (
+            <div
+              className={`card-type ${type.name}`}
+              key={`${type.name} ${id}`}
+            >
+              {type.name}
+            </div>
+          ))}
         </div>
       </div>
     </div>

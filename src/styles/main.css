@@ -73,13 +73,138 @@ html {
 }
 
 .card-type {
-  background-color: #189222;
   box-shadow: rgba(0, 0, 0, 0.644) 1px 2px 2px;
   color: white;
   border-radius: 5px;
   font-family: monospace;
   padding: 5px;
   font-size: 0.9rem;
+}
+
+.card-type.normal {
+  background-color: #a8a777;
+}
+.card-type.normal:hover {
+  background-color: #908f5c;
+}
+
+.card-type.fire {
+  background-color: #ef7e2f;
+}
+.card-type.fire:hover {
+  background-color: #da6411;
+}
+
+.card-type.bug {
+  background-color: #a7b720;
+}
+.card-type.bug:hover {
+  background-color: #7f8c18;
+}
+
+.card-type.fighting {
+  background-color: #bf2f27;
+}
+.card-type.fighting:hover {
+  background-color: #95251e;
+}
+
+.card-type.ghost {
+  background-color: #6f5697;
+}
+.card-type.ghost:hover {
+  background-color: #574377;
+}
+
+.card-type.flying {
+  background-color: #a78fef;
+}
+.card-type.flying:hover {
+  background-color: #8462e9;
+}
+
+.card-type.steel {
+  background-color: #87878d;
+}
+.card-type.steel:hover {
+  background-color: #6e6e73;
+}
+
+.card-type.poison {
+  background-color: #9872bb;
+}
+.card-type.poison:hover {
+  background-color: #7f51a9;
+}
+
+.card-type.ground {
+  background-color: #dfbf68;
+}
+.card-type.ground:hover {
+  background-color: #d6ad3e;
+}
+
+.card-type.water {
+  background-color: #678fef;
+}
+.card-type.water:hover {
+  background-color: #396dea;
+}
+
+.card-type.rock {
+  background-color: #b69f37;
+}
+.card-type.rock:hover {
+  background-color: #8f7d2b;
+}
+
+.card-type.grass {
+  background-color: #77c74e;
+}
+.card-type.grass:hover {
+  background-color: #5eac36;
+}
+
+.card-type.electric {
+  background-color: #f7cf2f;
+}
+.card-type.electric:hover {
+  background-color: #eabd09;
+}
+
+.card-type.psychic {
+  background-color: #f65787;
+}
+.card-type.psychic:hover {
+  background-color: #f32764;
+}
+
+.card-type.ice {
+  background-color: #55b5c2;
+}
+.card-type.ice:hover {
+  background-color: #3c9ba8;
+}
+
+.card-type.dark {
+  background-color: #6e5747;
+}
+.card-type.dark:hover {
+  background-color: #4f3e33;
+}
+
+.card-type.fairy {
+  background-color: #fe64d4;
+}
+.card-type.fairy:hover {
+  background-color: #fe31c6;
+}
+
+.card-type.dragon {
+  background-color: #6f37f8;
+}
+.card-type.dragon:hover {
+  background-color: #4d09f3;
 }
 
 /* TYPE BUTTON */
