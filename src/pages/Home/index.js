@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
-import types from "../../utils/pokemonTypesArray";
 
-import TypeButton from "../../components/TypeButton";
 import PokemonScreen from "../../components/PokemonScreen";
+import FilterWrapper from "../../components/FilterWrapper";
 
 function Home() {
   const { getPokemonList, pokemonList, filter, error } = usePokemon();
@@ -27,10 +26,7 @@ function Home() {
         <div className="home-title-container">
           <h1 className="home-main-title">PokéApi</h1>
         </div>
-
-        <div>
-          {types && types.map((type) => <TypeButton type={type} key={type} />)}
-        </div>
+        <FilterWrapper />
         <br />
         <h3>{loading && "loading"}</h3>
         <PokemonScreen />

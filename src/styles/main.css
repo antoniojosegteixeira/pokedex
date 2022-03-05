@@ -99,6 +99,15 @@ html {
   cursor: pointer;
   transition: all 0.1s ease;
 }
+.type-button.reset {
+  background-color: #212127;
+}
+.type-button.reset:hover {
+  background-color: #383843;
+}
+.type-button.reset:active {
+  background-color: #50505e;
+}
 
 .type-button.normal {
   background-color: #a8a777;

@@ -16,6 +16,18 @@
   cursor: pointer;
 
   transition: all 0.1s ease;
+
+  &.reset {
+    background-color: rgb(33, 33, 39);
+
+    &:hover {
+      background-color: lighten(rgb(33, 33, 39), 10%);
+    }
+
+    &:active {
+      background-color: lighten(rgb(33, 33, 39), 20%);
+    }
+  }
 }
 
 /// Iterate through array of colors
