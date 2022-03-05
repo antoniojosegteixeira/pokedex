@@ -32,7 +32,8 @@ html {
   color: orange;
 }
 
-.home-card-grid {
+/* SCREEN */
+.screen-grid {
   display: grid;
   grid-template-columns: repeat(4, auto);
   gap: 10px;

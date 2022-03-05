@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 import types from "../../utils/pokemonTypesArray";
 
-import Card from "../../components/Card";
 import TypeButton from "../../components/TypeButton";
+import PokemonScreen from "../../components/PokemonScreen";
 
 function Home() {
   const { getPokemonList, pokemonList, filter, error } = usePokemon();
@@ -33,14 +33,7 @@ function Home() {
         </div>
         <br />
         <h3>{loading && "loading"}</h3>
-        <div className="home-card-grid">
-          {pokemonList.length > 0 &&
-            pokemonList.map((item) => (
-              <div key={item.name}>
-                <Card name={item.name} id={item.id} image={item.image} />
-              </div>
-            ))}
-        </div>
+        <PokemonScreen />
       </div>
     </div>
   );
