@@ -20,19 +20,21 @@ function Home() {
 
   return (
     <div>
-      PokeApi
-      <br />
-      <button onClick={() => addFilter("grass")}>GRASS</button>
-      <br />
-      <h3>{loading && "loading"}</h3>
-      <div>
-        {pokemonList.length > 0 &&
-          pokemonList.map((item) => (
-            <div key={item.name}>
-              <img src={item.image} alt="" />
-              {item.name}
-            </div>
-          ))}
+      <div className="container">
+        PokeApi
+        <br />
+        <button onClick={() => addFilter("grass")}>GRASS</button>
+        <br />
+        <h3>{loading && "loading"}</h3>
+        <div>
+          {pokemonList.length > 0 &&
+            pokemonList.map((item) => (
+              <div key={item.name}>
+                <img src={item.image} alt="" />
+                {item.name}
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );
