@@ -14,11 +14,21 @@
   padding: 8px;
   font-size: 0.9rem;
   cursor: pointer;
+
+  transition: all 0.1s ease;
 }
 
 /// Iterate through array of colors
 @each $typeColor, $i in $typeColors {
   .type-button.#{$typeColor} {
     background-color: $i;
+
+    &:hover {
+      background-color: darken($i, 10%);
+    }
+
+    &:active {
+      background-color: darken($i, 20%);
+    }
   }
 }

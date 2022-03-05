@@ -96,76 +96,185 @@ html {
   padding: 8px;
   font-size: 0.9rem;
   cursor: pointer;
+  transition: all 0.1s ease;
 }
 
 .type-button.normal {
   background-color: #a8a777;
 }
+.type-button.normal:hover {
+  background-color: #908f5c;
+}
+.type-button.normal:active {
+  background-color: #717048;
+}
 
 .type-button.fire {
   background-color: #ef7e2f;
+}
+.type-button.fire:hover {
+  background-color: #da6411;
+}
+.type-button.fire:active {
+  background-color: #ab4e0d;
 }
 
 .type-button.bug {
   background-color: #a7b720;
 }
+.type-button.bug:hover {
+  background-color: #7f8c18;
+}
+.type-button.bug:active {
+  background-color: #586011;
+}
 
 .type-button.fighting {
   background-color: #bf2f27;
+}
+.type-button.fighting:hover {
+  background-color: #95251e;
+}
+.type-button.fighting:active {
+  background-color: #6a1a16;
 }
 
 .type-button.ghost {
   background-color: #6f5697;
 }
+.type-button.ghost:hover {
+  background-color: #574377;
+}
+.type-button.ghost:active {
+  background-color: #3f3156;
+}
 
 .type-button.flying {
   background-color: #a78fef;
+}
+.type-button.flying:hover {
+  background-color: #8462e9;
+}
+.type-button.flying:active {
+  background-color: #6136e2;
 }
 
 .type-button.steel {
   background-color: #87878d;
 }
+.type-button.steel:hover {
+  background-color: #6e6e73;
+}
+.type-button.steel:active {
+  background-color: #555559;
+}
 
 .type-button.poison {
   background-color: #9872bb;
+}
+.type-button.poison:hover {
+  background-color: #7f51a9;
+}
+.type-button.poison:active {
+  background-color: #654186;
 }
 
 .type-button.ground {
   background-color: #dfbf68;
 }
+.type-button.ground:hover {
+  background-color: #d6ad3e;
+}
+.type-button.ground:active {
+  background-color: #ba9227;
+}
 
 .type-button.water {
   background-color: #678fef;
+}
+.type-button.water:hover {
+  background-color: #396dea;
+}
+.type-button.water:active {
+  background-color: #1750d9;
 }
 
 .type-button.rock {
   background-color: #b69f37;
 }
+.type-button.rock:hover {
+  background-color: #8f7d2b;
+}
+.type-button.rock:active {
+  background-color: #685b1f;
+}
 
 .type-button.grass {
   background-color: #77c74e;
+}
+.type-button.grass:hover {
+  background-color: #5eac36;
+}
+.type-button.grass:active {
+  background-color: #49852a;
 }
 
 .type-button.electric {
   background-color: #f7cf2f;
 }
+.type-button.electric:hover {
+  background-color: #eabd09;
+}
+.type-button.electric:active {
+  background-color: #b99507;
+}
 
 .type-button.psychic {
   background-color: #f65787;
+}
+.type-button.psychic:hover {
+  background-color: #f32764;
+}
+.type-button.psychic:active {
+  background-color: #db0c4a;
 }
 
 .type-button.ice {
   background-color: #55b5c2;
 }
+.type-button.ice:hover {
+  background-color: #3c9ba8;
+}
+.type-button.ice:active {
+  background-color: #2f7882;
+}
 
 .type-button.dark {
   background-color: #6e5747;
+}
+.type-button.dark:hover {
+  background-color: #4f3e33;
+}
+.type-button.dark:active {
+  background-color: #30261f;
 }
 
 .type-button.fairy {
   background-color: #fe64d4;
 }
+.type-button.fairy:hover {
+  background-color: #fe31c6;
+}
+.type-button.fairy:active {
+  background-color: #fa02b7;
+}
 
 .type-button.dragon {
   background-color: #6f37f8;
+}
+.type-button.dragon:hover {
+  background-color: #4d09f3;
+}
+.type-button.dragon:active {
+  background-color: #3d07c2;
 }/*# sourceMappingURL=main.css.map */
