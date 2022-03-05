@@ -1,6 +1,9 @@
 import { useContext } from "react";
 import { AppContext } from "../context/store";
-import { getPokemonListRequest } from "../../services/pokeapiRequests";
+import {
+  getPokemonListRequest,
+  getSinglePokemonRequest,
+} from "../../services/pokeapiRequests";
 
 export function usePokemon() {
   const context = useContext(AppContext);
@@ -8,8 +11,23 @@ export function usePokemon() {
   const { pokemonList, error, filter } = state;
 
   const getPokemonList = async () => {
-    const pokemonList = await getPokemonListRequest();
-    dispatch({ type: "ADD_POKEMON_LIST", payload: pokemonList.results });
+    const listResponse = await getPokemonListRequest();
+    const simplePokemonList = listResponse.results;
+    const updatedPokemonList = { ...simplePokemonList };
+
+    simplePokemonList.map(async (item, i) => {
+      /// Fetch single pokemon data
+      const response = await getSinglePokemonRequest(item);
+
+      // Updating simple list with types and image
+      updatedPokemonList[i] = {
+        ...updatedPokemonList[i],
+        types: response.types,
+        image: response.sprites.front_default,
+      };
+    });
+
+    dispatch({ type: "ADD_POKEMON_LIST", payload: updatedPokemonList });
   };
 
   const addFilter = (filter) => {
