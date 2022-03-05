@@ -11,22 +11,31 @@ export function usePokemon() {
   const { pokemonList, error, filter } = state;
 
   const getPokemonList = async () => {
-    /// Get raw list of every pokemon
-    const { results } = await getPokemonListRequest();
-    const simplePokemonList = results;
-    const updatedPokemonList = { ...simplePokemonList };
+    const getPokemons = async () => {
+      /// Get raw list of every pokemon
+      const { results } = await getPokemonListRequest();
+      const simplePokemonList = results;
+      const updatedPokemonList = [...simplePokemonList];
 
-    simplePokemonList.map(async (item, i) => {
-      /// Fetch single pokemon data
-      const response = await getSinglePokemonRequest(item);
+      await Promise.all(
+        simplePokemonList.map(async (item, i) => {
+          /// Fetch single pokemon data
+          const response = await getSinglePokemonRequest(item);
 
-      // Updating simple list with types and image
-      updatedPokemonList[i] = {
-        ...updatedPokemonList[i],
-        types: response.types,
-        image: response.sprites.front_default,
-      };
-    });
+          // Updating simple list with types and image
+          updatedPokemonList[i] = {
+            id: response.id,
+            name: response.name,
+            types: response.types,
+            image: response.sprites.front_default,
+          };
+        })
+      );
+
+      return updatedPokemonList;
+    };
+
+    const updatedPokemonList = await getPokemons();
 
     dispatch({ type: "ADD_POKEMON_LIST", payload: updatedPokemonList });
   };
