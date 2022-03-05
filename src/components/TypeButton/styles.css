@@ -3,14 +3,69 @@
   border: none;
   text-transform: uppercase;
 
-  border: 2px solid rgba(0, 0, 0, 0.137);
-  box-shadow: rgba(0, 0, 0, 0.863) 1px 2px 2px;
-  background-color: rgb(24, 146, 34);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.863) 0px 2px 2px;
   color: rgb(255, 255, 255);
 
+  margin: 2px;
   min-width: 60px;
   border-radius: 5px;
   font-family: monospace;
   padding: 8px;
   font-size: 0.9rem;
+}
+
+.normal {
+  background-color: var(--normal);
+}
+.fire {
+  background-color: var(--fire);
+}
+.bug {
+  background-color: var(--bug);
+}
+.fighting {
+  background-color: var(--fighting);
+}
+.ghost {
+  background-color: var(--ghost);
+}
+.flying {
+  background-color: var(--flying);
+}
+.steel {
+  background-color: var(--steel);
+}
+.poison {
+  background-color: var(--poison);
+}
+.ground {
+  background-color: var(--ground);
+}
+.water {
+  background-color: var(--water);
+}
+.rock {
+  background-color: var(--rock);
+}
+.grass {
+  background-color: var(--grass);
+}
+.electric {
+  background-color: var(--electric);
+}
+.psychic {
+  background-color: var(--psychic);
+}
+.ice {
+  background-color: var(--ice);
+}
+.dark {
+  background-color: var(--dark);
+}
+.fairy {
+  background-color: var(--fairy);
+}
+.dragon {
+  background-color: var(--dragon);
 }
