@@ -18,6 +18,8 @@
   color: orange;
 }
 
-.home-cardBox {
-  max-width: 800px;
+.home-card-container {
+  border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
 }
