@@ -11,27 +11,6 @@ html {
 }
 
 /* COLORS */
-:root {
-  --normal: #a8a777;
-  --fire: #ef7e2f;
-  --bug: #a7b720;
-  --fighting: #bf2f27;
-  --ghost: #6f5697;
-  --flying: #a78fef;
-  --steel: #87878d;
-  --poison: #9872bb;
-  --ground: #dfbf68;
-  --water: #678fef;
-  --rock: #b69f37;
-  --grass: #77c74e;
-  --electric: #f7cf2f;
-  --psychic: #f65787;
-  --ice: #55b5c2;
-  --dark: #6e5747;
-  --fairy: #fe64d4;
-  --dragon: #6f37f8;
-}
-
 /* HOMEPAGE */
 .home-wrapper {
   min-height: 100vh;
@@ -119,74 +98,74 @@ html {
   cursor: pointer;
 }
 
-.normal {
-  background-color: var(--normal);
+.type-button.normal {
+  background-color: #a8a777;
 }
 
-.fire {
-  background-color: var(--fire);
+.type-button.fire {
+  background-color: #ef7e2f;
 }
 
-.bug {
-  background-color: var(--bug);
+.type-button.bug {
+  background-color: #a7b720;
 }
 
-.fighting {
-  background-color: var(--fighting);
+.type-button.fighting {
+  background-color: #bf2f27;
 }
 
-.ghost {
-  background-color: var(--ghost);
+.type-button.ghost {
+  background-color: #6f5697;
 }
 
-.flying {
-  background-color: var(--flying);
+.type-button.flying {
+  background-color: #a78fef;
 }
 
-.steel {
-  background-color: var(--steel);
+.type-button.steel {
+  background-color: #87878d;
 }
 
-.poison {
-  background-color: var(--poison);
+.type-button.poison {
+  background-color: #9872bb;
 }
 
-.ground {
-  background-color: var(--ground);
+.type-button.ground {
+  background-color: #dfbf68;
 }
 
-.water {
-  background-color: var(--water);
+.type-button.water {
+  background-color: #678fef;
 }
 
-.rock {
-  background-color: var(--rock);
+.type-button.rock {
+  background-color: #b69f37;
 }
 
-.grass {
-  background-color: var(--grass);
+.type-button.grass {
+  background-color: #77c74e;
 }
 
-.electric {
-  background-color: var(--electric);
+.type-button.electric {
+  background-color: #f7cf2f;
 }
 
-.psychic {
-  background-color: var(--psychic);
+.type-button.psychic {
+  background-color: #f65787;
 }
 
-.ice {
-  background-color: var(--ice);
+.type-button.ice {
+  background-color: #55b5c2;
 }
 
-.dark {
-  background-color: var(--dark);
+.type-button.dark {
+  background-color: #6e5747;
 }
 
-.fairy {
-  background-color: var(--fairy);
+.type-button.fairy {
+  background-color: #fe64d4;
 }
 
-.dragon {
-  background-color: var(--dragon);
+.type-button.dragon {
+  background-color: #6f37f8;
 }/*# sourceMappingURL=main.css.map */

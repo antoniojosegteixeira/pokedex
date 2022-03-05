@@ -1,20 +1,20 @@
-:root {
-  --normal: #a8a777;
-  --fire: #ef7e2f;
-  --bug: #a7b720;
-  --fighting: #bf2f27;
-  --ghost: #6f5697;
-  --flying: #a78fef;
-  --steel: #87878d;
-  --poison: #9872bb;
-  --ground: #dfbf68;
-  --water: #678fef;
-  --rock: #b69f37;
-  --grass: #77c74e;
-  --electric: #f7cf2f;
-  --psychic: #f65787;
-  --ice: #55b5c2;
-  --dark: #6e5747;
-  --fairy: #fe64d4;
-  --dragon: #6f37f8;
-}
+$typeColors: (
+  "normal": #a8a777,
+  "fire": #ef7e2f,
+  "bug": #a7b720,
+  "fighting": #bf2f27,
+  "ghost": #6f5697,
+  "flying": #a78fef,
+  "steel": #87878d,
+  "poison": #9872bb,
+  "ground": #dfbf68,
+  "water": #678fef,
+  "rock": #b69f37,
+  "grass": #77c74e,
+  "electric": #f7cf2f,
+  "psychic": #f65787,
+  "ice": #55b5c2,
+  "dark": #6e5747,
+  "fairy": #fe64d4,
+  "dragon": #6f37f8,
+);

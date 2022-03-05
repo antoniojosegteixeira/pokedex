@@ -16,61 +16,9 @@
   cursor: pointer;
 }
 
-.type-button:focus {
-  
-}
-
-.normal {
-  background-color: var(--normal);
-}
-.fire {
-  background-color: var(--fire);
-}
-.bug {
-  background-color: var(--bug);
-}
-.fighting {
-  background-color: var(--fighting);
-}
-.ghost {
-  background-color: var(--ghost);
-}
-.flying {
-  background-color: var(--flying);
-}
-.steel {
-  background-color: var(--steel);
-}
-.poison {
-  background-color: var(--poison);
-}
-.ground {
-  background-color: var(--ground);
-}
-.water {
-  background-color: var(--water);
-}
-.rock {
-  background-color: var(--rock);
-}
-.grass {
-  background-color: var(--grass);
-}
-.electric {
-  background-color: var(--electric);
-}
-.psychic {
-  background-color: var(--psychic);
-}
-.ice {
-  background-color: var(--ice);
-}
-.dark {
-  background-color: var(--dark);
-}
-.fairy {
-  background-color: var(--fairy);
-}
-.dragon {
-  background-color: var(--dragon);
+/// Iterate through array of colors
+@each $typeColor, $i in $typeColors {
+  .type-button.#{$typeColor} {
+    background-color: $i;
+  }
 }
