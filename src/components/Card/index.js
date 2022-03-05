@@ -9,6 +9,10 @@ export default function Card({ name, id, image }) {
 
       <div className="card-info">
         <span className="card-name">{name}</span>
+        <div className="card-type-wrapper">
+          <div className="card-type">GRASS</div>
+          <div className="card-type">GRASS</div>
+        </div>
       </div>
     </div>
   );

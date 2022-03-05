@@ -12,13 +12,30 @@
 .card-info {
   display: flex;
   flex-direction: column;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 15px;
   border-radius: 0 0 10px 10px;
-  background-color: rgb(125, 221, 192);
 }
 
 .card-name {
   text-transform: capitalize;
   text-align: center;
   font-size: large;
+  padding-bottom: 5px;
+}
+
+.card-type-wrapper {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.card-type {
+  background-color: rgb(24, 146, 34);
+  box-shadow: rgba(0, 0, 0, 0.644) 1px 2px 2px;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 0.9rem;
 }
