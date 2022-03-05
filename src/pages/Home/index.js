@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 
+import Card from "../../components/Card";
+
 function Home() {
   const { getPokemonList, addFilter, pokemonList, filter, error } =
     usePokemon();
@@ -33,8 +35,7 @@ function Home() {
           {pokemonList.length > 0 &&
             pokemonList.map((item) => (
               <div key={item.name}>
-                <img src={item.image} alt="" />
-                {item.name}
+                <Card pokemonData={item} />
               </div>
             ))}
         </div>
