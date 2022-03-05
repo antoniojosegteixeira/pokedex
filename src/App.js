@@ -1,15 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { usePokemon } from "./application/hooks/usePokemon";
 
 function App() {
   const { getPokemonList, addFilter, pokemonList, filter, error } =
     usePokemon();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (Object.keys(pokemonList).length === 0) {
-      getPokemonList();
+    const fetchList = async () => {
+      await getPokemonList();
+      setLoading(false);
+    };
+
+    if (pokemonList && pokemonList.length === 0) {
+      setLoading(true);
+      fetchList();
     }
-  }, [getPokemonList, pokemonList]);
+  }, [pokemonList, getPokemonList, loading]);
 
   return (
     <div>
@@ -17,11 +24,13 @@ function App() {
       <br />
       <button onClick={() => addFilter("grass")}>GRASS</button>
       <br />
+      <h3>{loading && "loading"}</h3>
       <div>
-        {pokemonList &&
-          pokemonList.map((item, i) => (
-            <div>
-              <div>{item.name}</div>
+        {pokemonList.length > 0 &&
+          pokemonList.map((item) => (
+            <div key={item.name}>
+              <img src={item.image} alt="" />
+              {item.name}
             </div>
           ))}
       </div>
