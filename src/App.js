@@ -1,41 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { usePokemon } from "./application/hooks/usePokemon";
+import React from "react";
+
+import Home from "./pages/Home";
 
 function App() {
-  const { getPokemonList, addFilter, pokemonList, filter, error } =
-    usePokemon();
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    const fetchList = async () => {
-      await getPokemonList();
-      setLoading(false);
-    };
-
-    if (pokemonList && pokemonList.length === 0) {
-      setLoading(true);
-      fetchList();
-    }
-  }, [pokemonList, getPokemonList, loading]);
-
-  return (
-    <div>
-      PokeApi
-      <br />
-      <button onClick={() => addFilter("grass")}>GRASS</button>
-      <br />
-      <h3>{loading && "loading"}</h3>
-      <div>
-        {pokemonList.length > 0 &&
-          pokemonList.map((item) => (
-            <div key={item.name}>
-              <img src={item.image} alt="" />
-              {item.name}
-            </div>
-          ))}
-      </div>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
