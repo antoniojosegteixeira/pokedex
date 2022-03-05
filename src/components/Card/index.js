@@ -1,7 +1,6 @@
 import React from "react";
 
-export default function Card({ pokemonData }) {
-  const { name, id, image } = pokemonData;
+export default function Card({ name, id, image }) {
   return (
     <div className="card">
       <img src={image} alt="" />

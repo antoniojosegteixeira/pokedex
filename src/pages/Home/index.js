@@ -35,7 +35,7 @@ function Home() {
           {pokemonList.length > 0 &&
             pokemonList.map((item) => (
               <div key={item.name}>
-                <Card pokemonData={item} />
+                <Card name={item.name} id={item.id} image={item.image} />
               </div>
             ))}
         </div>
