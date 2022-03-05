@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
+import types from "../../utils/pokemonTypesArray";
 
 import Card from "../../components/Card";
+import TypeButton from "../../components/TypeButton";
 
 function Home() {
-  const { getPokemonList, addFilter, pokemonList, filter, error } =
-    usePokemon();
+  const { getPokemonList, pokemonList, filter, error } = usePokemon();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -27,8 +28,9 @@ function Home() {
           <h1 className="home-main-title">PokéApi</h1>
         </div>
 
-        <br />
-        <button onClick={() => addFilter("grass")}>GRASS</button>
+        <div>
+          {types && types.map((type) => <TypeButton type={type} key={type} />)}
+        </div>
         <br />
         <h3>{loading && "loading"}</h3>
         <div className="home-card-grid">

@@ -1,10 +1,8 @@
 import React from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 
-export default function TypeButton() {
+export default function TypeButton({ type }) {
   const { filter, addFilter } = usePokemon();
 
-  console.log(filter);
-
-  return <button onClick={() => addFilter("grass")}>GRASS</button>;
+  return <button onClick={() => addFilter(type)}>{type}</button>;
 }
