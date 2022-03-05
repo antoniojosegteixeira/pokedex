@@ -3,7 +3,19 @@
 }
 
 .container {
+  margin: 0 auto;
   max-width: 1000px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-title {
+  font-family: "Pokemon Solid", sans-serif;
+  color: orange;
 }
 
 .cardBox {

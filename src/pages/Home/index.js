@@ -19,9 +19,12 @@ function Home() {
   }, [pokemonList, getPokemonList, loading]);
 
   return (
-    <div>
+    <div className="page-wrapper">
       <div className="container">
-        PokeApi
+        <div className="title-container">
+          <h1 className="main-title">PokéApi</h1>
+        </div>
+
         <br />
         <button onClick={() => addFilter("grass")}>GRASS</button>
         <br />
