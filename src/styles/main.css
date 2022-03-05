@@ -1,14 +1,192 @@
 /* BASE */
-@import "./base.css";
+body,
+html {
+  min-height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
 
 /* COLORS */
-@import "./colors.css";
+:root {
+  --normal: #a8a777;
+  --fire: #ef7e2f;
+  --bug: #a7b720;
+  --fighting: #bf2f27;
+  --ghost: #6f5697;
+  --flying: #a78fef;
+  --steel: #87878d;
+  --poison: #9872bb;
+  --ground: #dfbf68;
+  --water: #678fef;
+  --rock: #b69f37;
+  --grass: #77c74e;
+  --electric: #f7cf2f;
+  --psychic: #f65787;
+  --ice: #55b5c2;
+  --dark: #6e5747;
+  --fairy: #fe64d4;
+  --dragon: #6f37f8;
+}
 
 /* HOMEPAGE */
-@import "../pages/Home/styles.css";
+.home-wrapper {
+  min-height: 100vh;
+}
+
+.home-container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.home-title-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-main-title {
+  font-family: "Pokemon Solid", sans-serif;
+  color: orange;
+}
+
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 10px;
+}
 
 /* CARD */
-@import "../components/Card/styles.css";
+.card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 10px;
+}
+
+.card-image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-radius: 0 0 10px 10px;
+}
+
+.card-name {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: large;
+  padding-bottom: 5px;
+}
+
+.card-type-wrapper {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+.card-type {
+  background-color: #189222;
+  box-shadow: rgba(0, 0, 0, 0.644) 1px 2px 2px;
+  color: white;
+  border-radius: 5px;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 0.9rem;
+}
 
 /* TYPE BUTTON */
-@import "../components/TypeButton/styles.css";
+.type-button {
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.863) 0px 2px 2px;
+  color: white;
+  margin: 2px;
+  min-width: 60px;
+  border-radius: 5px;
+  font-family: monospace;
+  padding: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.normal {
+  background-color: var(--normal);
+}
+
+.fire {
+  background-color: var(--fire);
+}
+
+.bug {
+  background-color: var(--bug);
+}
+
+.fighting {
+  background-color: var(--fighting);
+}
+
+.ghost {
+  background-color: var(--ghost);
+}
+
+.flying {
+  background-color: var(--flying);
+}
+
+.steel {
+  background-color: var(--steel);
+}
+
+.poison {
+  background-color: var(--poison);
+}
+
+.ground {
+  background-color: var(--ground);
+}
+
+.water {
+  background-color: var(--water);
+}
+
+.rock {
+  background-color: var(--rock);
+}
+
+.grass {
+  background-color: var(--grass);
+}
+
+.electric {
+  background-color: var(--electric);
+}
+
+.psychic {
+  background-color: var(--psychic);
+}
+
+.ice {
+  background-color: var(--ice);
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.fairy {
+  background-color: var(--fairy);
+}
+
+.dragon {
+  background-color: var(--dragon);
+}/*# sourceMappingURL=main.css.map */
