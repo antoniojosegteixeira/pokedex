@@ -1,6 +1,9 @@
 /* BASE */
 @import "./base.css";
 
+/* COLORS */
+@import "./colors.css";
+
 /* HOMEPAGE */
 @import "../pages/Home/styles.css";
 
