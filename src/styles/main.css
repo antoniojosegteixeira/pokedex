@@ -40,9 +40,11 @@ html {
 }
 
 .home-content {
-  background-color: white;
+  position: relative;
+  min-height: 300px;
   padding: 2rem 1.3rem;
   border-radius: 15px;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 12px;
 }
 
@@ -55,6 +57,10 @@ html {
 }
 
 .screen-empty {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
