@@ -96,6 +96,9 @@ html {
 .screen-empty {
   min-height: 160px;
 }
+.screen-empty .screen-empty-message {
+  text-align: center;
+}
 
 @media only screen and (min-width: 350px) {
   .screen-grid {

@@ -29,7 +29,11 @@ export default function PokemonScreen() {
         </div>
       );
     } else {
-      return <div className="screen-empty">No Pokémons!</div>;
+      return (
+        <div className="screen-empty">
+          <p className="screen-empty-message">No Pokémons!</p>
+        </div>
+      );
     }
   }
 

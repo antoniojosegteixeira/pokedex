@@ -6,6 +6,10 @@
 
 .screen-empty {
   min-height: 160px;
+
+  .screen-empty-message {
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 350px) {
