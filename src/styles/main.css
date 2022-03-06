@@ -48,7 +48,40 @@ html {
   box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 12px;
 }
 
-/*               COMPONENTS                */
+/* KEYFRAMES */
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*   --------  COMPONENTS ----------   */
 /* SCREEN */
 .screen-grid {
   display: grid;
@@ -62,12 +95,19 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
+  opacity: 0;
+  -webkit-animation: appear 0.2s ease-in-out forwards;
+          animation: appear 0.2s ease-in-out forwards;
 }
 
 /* CARD */
 .card {
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 10px;
+  min-height: 138px;
+  opacity: 0;
+  -webkit-animation: appear 0.2s ease-in-out 0.1s forwards;
+          animation: appear 0.2s ease-in-out 0.1s forwards;
 }
 
 .card-image-wrapper {
@@ -489,8 +529,8 @@ html {
   position: relative;
   overflow: hidden;
   border: 3px solid rgba(0, 0, 0, 0.808);
-  -webkit-animation: frames 0.8s linear 0s infinite;
-          animation: frames 0.8s linear 0s infinite;
+  -webkit-animation: spin 0.8s linear 0s infinite;
+          animation: spin 0.8s linear 0s infinite;
 }
 .spinner-pokeball:after {
   content: "";
@@ -512,22 +552,4 @@ html {
   bottom: 18px;
   right: 18px;
   z-index: 1;
-}
-
-/* AnimationFrames */
-@-webkit-keyframes frames {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes frames {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }/*# sourceMappingURL=main.css.map */

@@ -19,7 +19,7 @@
   position: relative;
   overflow: hidden;
   border: 3px solid rgba(0, 0, 0, 0.808);
-  animation: frames 0.8s linear 0s infinite;
+  animation: spin 0.8s linear 0s infinite;
 
   &:after {
     content: "";
@@ -42,15 +42,5 @@
     bottom: 18px;
     right: 18px;
     z-index: 1;
-  }
-}
-
-/* AnimationFrames */
-@keyframes frames {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
