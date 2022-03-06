@@ -94,11 +94,7 @@ html {
 }
 
 .screen-empty {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  min-height: 160px;
 }
 
 @media only screen and (min-width: 350px) {
@@ -524,7 +520,7 @@ html {
 /* SPINNER */
 .spinner-container {
   position: relative;
-  height: 200px;
+  height: 90px;
   opacity: 0.6;
 }
 
@@ -566,4 +562,15 @@ html {
   bottom: 18px;
   right: 18px;
   z-index: 1;
+}
+
+/* ERROR MESSAGE */
+.error-container {
+  display: flex;
+  width: 100%;
+  padding: 20px 0;
+  justify-content: center;
+  text-align: center;
+  color: #e70f2c;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */

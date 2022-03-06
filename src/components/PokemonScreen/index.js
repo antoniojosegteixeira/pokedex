@@ -1,11 +1,12 @@
 import React from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 
-import Card from "../../components/Card";
+import Card from "../Card";
 import Spinner from "../Spinner";
+import ErrorMessage from "../ErrorMessage";
 
 export default function PokemonScreen() {
-  const { pokemonList, filter } = usePokemon();
+  const { pokemonList, filter, error } = usePokemon();
 
   /// Check if there's a filter
   if (pokemonList && filter && pokemonList.length > 0) {
@@ -50,6 +51,10 @@ export default function PokemonScreen() {
     );
   }
 
-  /// Loading
-  return <Spinner />;
+  /// Loading and error container
+  return (
+    <div className="screen-empty">
+      {error ? <ErrorMessage error={error} /> : <Spinner />}
+    </div>
+  );
 }

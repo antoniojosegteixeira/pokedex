@@ -4,6 +4,7 @@ import { usePokemon } from "../../application/hooks/usePokemon";
 import logo from "../../assets/images/logo.png";
 import PokemonScreen from "../../components/PokemonScreen";
 import FilterWrapper from "../../components/FilterWrapper";
+import ErrorMessage from "../../components/ErrorMessage";
 
 function Home() {
   const { getPokemonList, pokemonList, error } = usePokemon();
@@ -13,10 +14,10 @@ function Home() {
       await getPokemonList();
     };
 
-    if (pokemonList && pokemonList.length === 0) {
+    if (pokemonList && pokemonList.length === 0 && !error) {
       fetchList();
     }
-  }, [pokemonList, getPokemonList]);
+  }, [pokemonList, getPokemonList, error]);
 
   return (
     <div className="home-wrapper">
@@ -26,6 +27,7 @@ function Home() {
         </div>
         <div className="home-content">
           <FilterWrapper />
+          <ErrorMessage />
           <br />
           <PokemonScreen />
         </div>
