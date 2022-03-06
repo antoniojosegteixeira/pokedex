@@ -26,10 +26,12 @@ function Home() {
         <div className="home-title-container">
           <h1 className="home-main-title">PokéApi</h1>
         </div>
-        <FilterWrapper />
-        <br />
-        <h3>{loading && "loading"}</h3>
-        <PokemonScreen />
+        <div className="home-content">
+          <FilterWrapper />
+          <br />
+          <h3>{loading && "loading"}</h3>
+          <PokemonScreen />
+        </div>
       </div>
     </div>
   );
