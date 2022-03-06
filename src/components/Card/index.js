@@ -1,8 +1,6 @@
 import React from "react";
 
 export default function Card({ name, id, image, types }) {
-  console.log(types);
-
   return (
     <div className="card">
       <div className="card-image-wrapper">

@@ -54,6 +54,10 @@ html {
   gap: 10px;
 }
 
+.screen-empty {
+  text-align: center;
+}
+
 /* CARD */
 .card {
   border-radius: 10px;

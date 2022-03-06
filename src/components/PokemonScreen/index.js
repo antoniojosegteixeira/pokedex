@@ -7,25 +7,31 @@ import Spinner from "../Spinner";
 export default function PokemonScreen() {
   const { pokemonList, filter } = usePokemon();
 
+  console.log(pokemonList);
+
   /// Check if there's a filter
   if (pokemonList && filter && pokemonList.length > 0) {
     const filteredPokemons = pokemonList.filter((pokemon) => {
       return pokemon.types[0].type.name === filter;
     });
 
-    return (
-      <div className="screen-grid">
-        {filteredPokemons.map((item) => (
-          <Card
-            key={item.name}
-            name={item.name}
-            id={item.id}
-            image={item.image}
-            types={item.types}
-          />
-        ))}
-      </div>
-    );
+    if (filteredPokemons.length > 0) {
+      return (
+        <div className="screen-grid">
+          {filteredPokemons.map((item) => (
+            <Card
+              key={item.name}
+              name={item.name}
+              id={item.id}
+              image={item.image}
+              types={item.types}
+            />
+          ))}
+        </div>
+      );
+    } else {
+      return <div className="screen-empty">No Pokémons!</div>;
+    }
   }
 
   /// Default pokemon screen
