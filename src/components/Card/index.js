@@ -10,7 +10,11 @@ export default function Card({ name, id, image, types }) {
       </div>
 
       <div className="card-info">
-        <span className="card-name">{name}</span>
+        <div className="card-text-wrapper">
+          <span className="card-id">#{id}</span>
+          <span className="card-name">{name}</span>
+        </div>
+
         <div className="card-type-wrapper">
           {types.map(({ type }) => (
             <div

@@ -10,6 +10,7 @@
 
   img {
     -webkit-user-drag: none;
+    user-select: none;
   }
 }
 
@@ -22,11 +23,16 @@
   user-select: none;
 }
 
-.card-name {
-  text-transform: capitalize;
-  text-align: center;
-  font-size: large;
-  padding-bottom: 5px;
+.card-text-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  gap: 7px;
+  span {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 5px;
+  }
 }
 
 .card-type-wrapper {

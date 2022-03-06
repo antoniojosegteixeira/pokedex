@@ -66,6 +66,10 @@ html {
 }
 .card-image-wrapper img {
   -webkit-user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .card-info {
@@ -80,7 +84,12 @@ html {
           user-select: none;
 }
 
-.card-name {
+.card-text-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  gap: 7px;
+}
+.card-text-wrapper span {
   text-transform: capitalize;
   text-align: center;
   font-size: large;
