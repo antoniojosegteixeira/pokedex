@@ -85,7 +85,7 @@ html {
 /* SCREEN */
 .screen-grid {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
 }
 
@@ -100,6 +100,21 @@ html {
           animation: appear 0.2s ease-in-out forwards;
 }
 
+@media only screen and (min-width: 350px) {
+  .screen-grid {
+    grid-template-columns: repeat(2, 2fr);
+  }
+}
+@media only screen and (min-width: 530px) {
+  .screen-grid {
+    grid-template-columns: repeat(3, 3fr);
+  }
+}
+@media only screen and (min-width: 738px) {
+  .screen-grid {
+    grid-template-columns: repeat(4, 4fr);
+  }
+}
 /* CARD */
 .card {
   border-radius: 10px;
