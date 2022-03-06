@@ -35,12 +35,13 @@ html {
 
 .home-logo {
   max-width: 450px;
+  width: 100%;
   -webkit-user-drag: none;
 }
 
 .home-content {
   background-color: white;
-  padding: 1.3rem;
+  padding: 2rem 1.3rem;
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 12px;
 }
