@@ -7,6 +7,8 @@ export function usePokemon() {
   const { state, dispatch } = context;
   const { pokemonList, error, filter } = state;
 
+  // Fetch complete pokemon list
+  // Dispatch results
   const getPokemonList = async () => {
     try {
       const updatedPokemonList = await getPokemons();

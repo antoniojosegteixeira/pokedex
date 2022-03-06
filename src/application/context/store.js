@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import { reducer } from "./reducer";
 
-// Criando context
+// Create context
 export const AppContext = createContext();
 
 const initialState = {
@@ -10,7 +10,7 @@ const initialState = {
   error: "",
 };
 
-// Criando provider
+// Create provider
 export const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 

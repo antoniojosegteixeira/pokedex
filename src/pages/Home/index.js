@@ -9,6 +9,7 @@ import ErrorMessage from "../../components/ErrorMessage";
 function Home() {
   const { getPokemonList, pokemonList, error } = usePokemon();
 
+  // Fetch pokemon list
   useEffect(() => {
     const fetchList = async () => {
       await getPokemonList();
