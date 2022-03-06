@@ -26,15 +26,15 @@ html {
   max-width: 1000px;
 }
 
-.home-title-container {
+.home-header {
   display: flex;
   justify-content: center;
   width: 100%;
+  padding: 3rem 0;
 }
 
-.home-main-title {
-  font-family: "Pokemon Solid", sans-serif;
-  color: orange;
+.home-logo {
+  max-width: 450px;
 }
 
 .home-content {

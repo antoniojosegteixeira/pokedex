@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 
+import logo from "../../assets/images/logo.png";
 import PokemonScreen from "../../components/PokemonScreen";
 import FilterWrapper from "../../components/FilterWrapper";
 
@@ -23,8 +24,8 @@ function Home() {
   return (
     <div className="home-wrapper">
       <div className="home-container">
-        <div className="home-title-container">
-          <h1 className="home-main-title">PokéApi</h1>
+        <div className="home-header">
+          <img className="home-logo" alt="Pokédex" src={logo} />
         </div>
         <div className="home-content">
           <FilterWrapper />
