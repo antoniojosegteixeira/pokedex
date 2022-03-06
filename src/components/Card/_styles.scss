@@ -2,14 +2,13 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 10px;
   min-height: 138px;
-  opacity: 0;
-  animation: appear 0.2s ease-in-out 0.1s forwards;
+  padding-top: 10px;
 }
 
 .card-image-wrapper {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  min-height: 96px;
 
   img {
     -webkit-user-drag: none;
