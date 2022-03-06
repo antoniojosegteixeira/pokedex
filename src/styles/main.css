@@ -18,12 +18,12 @@ html {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding-bottom: 2rem;
 }
 
 .home-container {
   margin: 0 auto;
   max-width: 1000px;
+  padding-bottom: 0.5rem;
 }
 
 .home-header {
@@ -50,6 +50,18 @@ html {
   border-radius: 15px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.212) 0px 3px 12px;
+}
+
+.home-footer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 2rem;
+  font-size: small;
+}
+.home-footer span {
+  color: #1e4149;
 }
 
 /* KEYFRAMES */

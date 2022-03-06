@@ -33,6 +33,9 @@ function Home() {
           <PokemonScreen />
         </div>
       </div>
+      <div className="home-footer">
+        <span>Built by Antônio Teixeira</span>
+      </div>
     </div>
   );
 }
