@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 
 import logo from "../../assets/images/logo.png";
