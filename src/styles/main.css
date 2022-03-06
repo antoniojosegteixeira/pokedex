@@ -73,6 +73,10 @@ html {
   padding-top: 10px;
   padding-bottom: 15px;
   border-radius: 0 0 10px 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .card-name {
