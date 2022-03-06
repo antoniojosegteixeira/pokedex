@@ -7,6 +7,10 @@
   display: flex;
   justify-content: center;
   padding-top: 10px;
+
+  img {
+    -webkit-user-drag: none;
+  }
 }
 
 .card-info {
