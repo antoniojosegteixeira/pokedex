@@ -7,6 +7,7 @@
 /* HOMEPAGE */
 @import "../pages/Home/_styles.scss";
 
+/*               COMPONENTS                */
 /* SCREEN */
 @import "../components/PokemonScreen/_styles.scss";
 
@@ -18,3 +19,6 @@
 
 /* TYPE BUTTON */
 @import "../components/FilterWrapper/TypeButton/_styles.scss";
+
+/* SPINNER */
+@import "../components/Spinner/_styles.scss";

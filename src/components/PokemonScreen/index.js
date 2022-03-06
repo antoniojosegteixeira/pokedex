@@ -2,6 +2,7 @@ import React from "react";
 import { usePokemon } from "../../application/hooks/usePokemon";
 
 import Card from "../../components/Card";
+import Spinner from "../Spinner";
 
 export default function PokemonScreen() {
   const { pokemonList, filter } = usePokemon();
@@ -47,5 +48,5 @@ export default function PokemonScreen() {
 
   /// Loading
 
-  return <div></div>;
+  return <Spinner />;
 }

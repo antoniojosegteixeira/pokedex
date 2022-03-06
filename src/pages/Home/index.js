@@ -6,20 +6,17 @@ import PokemonScreen from "../../components/PokemonScreen";
 import FilterWrapper from "../../components/FilterWrapper";
 
 function Home() {
-  const { getPokemonList, pokemonList, filter, error } = usePokemon();
-  const [loading, setLoading] = useState(false);
+  const { getPokemonList, pokemonList, error } = usePokemon();
 
   useEffect(() => {
     const fetchList = async () => {
       await getPokemonList();
-      setLoading(false);
     };
 
     if (pokemonList && pokemonList.length === 0) {
-      setLoading(true);
       fetchList();
     }
-  }, [pokemonList, getPokemonList, loading]);
+  }, [pokemonList, getPokemonList]);
 
   return (
     <div className="home-wrapper">
@@ -30,7 +27,6 @@ function Home() {
         <div className="home-content">
           <FilterWrapper />
           <br />
-          <h3>{loading && "loading"}</h3>
           <PokemonScreen />
         </div>
       </div>
