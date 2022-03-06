@@ -8,8 +8,12 @@ export function usePokemon() {
   const { pokemonList, error, filter } = state;
 
   const getPokemonList = async () => {
-    const updatedPokemonList = await getPokemons();
-    dispatch({ type: "ADD_POKEMON_LIST", payload: updatedPokemonList });
+    try {
+      const updatedPokemonList = await getPokemons();
+      dispatch({ type: "ADD_POKEMON_LIST", payload: updatedPokemonList });
+    } catch (err) {
+      dispatch({ type: "ADD_ERROR", payload: err.message });
+    }
   };
 
   const addFilter = (filter) => {
