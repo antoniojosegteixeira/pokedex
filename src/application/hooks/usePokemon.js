@@ -7,6 +7,8 @@ export function usePokemon() {
   const { state, dispatch } = context;
   const { pokemonList, error, filter } = state;
 
+  // Fetch complete pokemon list and dispatch to context
+  // Catch errors and dispatch
   const getPokemonList = async () => {
     try {
       const updatedPokemonList = await getPokemons();
@@ -16,6 +18,7 @@ export function usePokemon() {
     }
   };
 
+  // Add a filter
   const addFilter = (filter) => {
     dispatch({ type: "ADD_POKEMON_FILTER", payload: filter });
   };

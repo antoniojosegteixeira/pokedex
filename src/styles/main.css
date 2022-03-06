@@ -53,22 +53,6 @@ html {
 }
 
 /* KEYFRAMES */
-@-webkit-keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
