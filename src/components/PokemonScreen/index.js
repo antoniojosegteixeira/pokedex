@@ -7,8 +7,6 @@ import Spinner from "../Spinner";
 export default function PokemonScreen() {
   const { pokemonList, filter } = usePokemon();
 
-  console.log(pokemonList);
-
   /// Check if there's a filter
   if (pokemonList && filter && pokemonList.length > 0) {
     const filteredPokemons = pokemonList.filter((pokemon) => {
@@ -53,6 +51,5 @@ export default function PokemonScreen() {
   }
 
   /// Loading
-
   return <Spinner />;
 }
