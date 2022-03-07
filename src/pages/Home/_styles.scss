@@ -1,15 +1,19 @@
 .home-wrapper {
   min-height: 100vh;
   background-image: url(../assets/images/background.jpg);
-  background-position: center bottom;
+  background-position: center -300px;
+  background-size: 1100px;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: #80b571;
 }
 
 .home-container {
   margin: 0 auto;
   max-width: 1000px;
   padding-bottom: 0.5rem;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .home-header {
@@ -46,5 +50,12 @@
 
   span {
     color: rgb(30, 65, 73);
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .home-wrapper {
+    background-position: center bottom;
+    background-size: cover;
   }
 }
