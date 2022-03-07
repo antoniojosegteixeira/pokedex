@@ -13,6 +13,7 @@ html {
 /* COLORS */
 /* HOMEPAGE */
 .home-wrapper {
+  position: relative;
   min-height: 100vh;
   background-image: url(../assets/images/background.jpg);
   background-position: center -300px;
@@ -57,12 +58,14 @@ html {
 }
 
 .home-footer {
-  margin: 0 auto;
+  position: absolute;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: end;
   padding: 1rem 2rem;
   font-size: small;
+  background-color: #80b571;
 }
 .home-footer span {
   color: #1e4149;

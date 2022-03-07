@@ -21,22 +21,24 @@ function Home() {
   }, [pokemonList, getPokemonList, error]);
 
   return (
-    <div className="home-wrapper">
-      <div className="home-container">
-        <div className="home-header">
-          <img className="home-logo" alt="Pokédex" src={logo} />
-        </div>
-        <div className="home-content">
-          <FilterWrapper />
-          <ErrorMessage />
-          <br />
-          <PokemonScreen />
+    <>
+      <div className="home-wrapper">
+        <div className="home-container">
+          <div className="home-header">
+            <img className="home-logo" alt="Pokédex" src={logo} />
+          </div>
+          <div className="home-content">
+            <FilterWrapper />
+            <ErrorMessage />
+            <br />
+            <PokemonScreen />
+          </div>
         </div>
       </div>
       <div className="home-footer">
         <span>Built by Antônio Teixeira</span>
       </div>
-    </div>
+    </>
   );
 }
 
